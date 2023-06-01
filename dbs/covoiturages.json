@@ -1,0 +1,81 @@
+[{
+  "_id": {
+    "$oid": "61503b118f3713ca3c0a9b8a"
+  },
+  "email": "johndoe@example.com",
+  "villedepart": "Paris",
+  "villearrive": "Lyon",
+  "numerocovoiturage": 1,
+  "nbplaces": 3,
+  "datejour": {
+    "$date": "2023-04-01T10:00:00.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "6412e593f4fb1eec44882ca0"
+  },
+  "email": "jane_doe@example.com",
+  "villedepart": "Marseille",
+  "villearrive": "Nice",
+  "numerocovoiturage": 2,
+  "nbplaces": 2,
+  "datejour": "2023-05-15"
+},{
+  "_id": "3498fj3849djf984jfd39",
+  "email": "jane_doe@example.com",
+  "villedepart": "Marseille",
+  "villearrive": "Nice",
+  "numerocovoiturage": 2,
+  "nbplaces": 2,
+  "datejour": "2023-05-15"
+},{
+  "_id": {
+    "$oid": "6412e83900b831e257352b3d"
+  },
+  "email": "jane_doe@example.com",
+  "villedepart": "Lyon",
+  "villearrive": "Nice",
+  "numerocovoiturage": 1,
+  "nbplaces": 4,
+  "datejour": "2023-05-15"
+},{
+  "_id": {
+    "$oid": "6412e872f5e97eb2e00504a6"
+  },
+  "email": "jane_doe@example.com",
+  "villedepart": "Lyon",
+  "villearrive": "Nice",
+  "numerocovoiturage": 1,
+  "nbplaces": 4,
+  "datejour": "2023-05-15"
+},{
+  "_id": {
+    "$oid": "642e78166d37ff74944263f4"
+  },
+  "email": "jane_doe@example.com",
+  "villedepart": "Marseille",
+  "villearrive": "Nice",
+  "numerocovoiturage": 2,
+  "nbplaces": 2,
+  "datejour": "2023-05-15"
+},{
+  "_id": {
+    "$oid": "642e7cf2bd09b63048f45696"
+  },
+  "email": "jane_doe@example.com",
+  "villedepart": "Marseille",
+  "villearrive": "Nice",
+  "numerocovoiturage": 2,
+  "nbplaces": 2,
+  "datejour": "2023-05-15"
+},{
+  "_id": {
+    "$oid": "642e92900e8f7b49624573c1"
+  },
+  "villeDépart": "Marseille",
+  "villeArrivée": "Nice",
+  "date": "2023-05-15",
+  "email": "jane_doe@example.com",
+  "nbPlaces": 2,
+  "numeroCovoiturage": 2
+}]

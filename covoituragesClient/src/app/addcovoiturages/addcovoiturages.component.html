@@ -1,0 +1,45 @@
+<div class="d-flex justify-content-center mt-5">
+    <div class="card mx-3" style="width: 28rem;">
+      <div class="card-body">
+            <h5 class="card-title text-center"> Ajouter un covoiturage </h5>
+          <form>
+            <div class="mb-3">
+              <label for="villedepart" class="form-label">Ville de depart</label>
+              <input type="text" class="form-control" id="villedepart" name="villedepart" [(ngModel)]="covoiturage.villedepart" required>
+            </div>
+            <div class="mb-3">
+              <label for="villearrive" class="form-label">Ville d'arrivée</label>
+              <input type="text" class="form-control" id="villearrive" name="villearrive" [(ngModel)]="covoiturage.villearrive" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Numéro de Covoiturage</label>
+              <input type="text" class="form-control" id="numerocovoiturage" name="numerocovoiturage" [(ngModel)]="covoiturage.numerocovoiturage" required>
+            </div>
+            <div class="mb-3">
+              <label for="nbplaces" class="form-label">Nombre de Places</label>
+              <input type="text" class="form-control" id="nbplaces" name="nbplaces" [(ngModel)]="covoiturage.nbplaces" required>
+            </div>
+            <div class="mb-3">
+                <label for="datejour" class="form-label text-white">Date de depart</label>
+                <input type="date" class="form-control" id="datejour"  name="datejour"  [(ngModel)]="covoiturage.datejour">
+            </div>
+
+            <div class="mb-3">
+              <label for="nbplaces" class="form-label">Prix</label>
+              <input type="text" class="form-control" id="prixmax" name="prixmax" [(ngModel)]="covoiturage.prixmax" required>
+            </div>
+
+            <div class="card-title text-center mb-2">
+                <button type="submit" class="btn btn-primary mb-2" (click)="createInternaute()">S'inscrire</button>
+            </div>
+            <div class="mt-3">
+              <p class="text-danger">{{message}}</p>
+            </div>
+            
+            
+            
+            </form>
+        </div>
+      </div>
+    </div>
+

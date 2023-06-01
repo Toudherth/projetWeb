@@ -1,0 +1,38 @@
+<div class="row justify-content-center  mt-5">
+  <div class="col-lg-4 col-md-6">
+    <div class="card">
+      
+      <h5 class="card-title text-center"> S'inscrire </h5>
+      <div class="card-body">
+        <form>
+          <div class="mb-3">
+            <label for="nom" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="nom" name="nom" [(ngModel)]="internaute.nom" required>
+          </div>
+          <div class="mb-3">
+            <label for="prenom" class="form-label">Prénom</label>
+            <input type="text" class="form-control" id="prenom" name="prenom" [(ngModel)]="internaute.prenom" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" [(ngModel)]="internaute.email" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Mot de passe</label>
+            <input type="password" class="form-control" id="password" name="password" [(ngModel)]="internaute.password" required>
+          </div>
+          <div class="mb-3">
+            <label for="num_permis" class="form-label">Numéro de permis</label>
+            <input type="text" class="form-control" id="num_permis" name="num_permis" [(ngModel)]="internaute.numpermis">
+          </div>
+          <div class="mb-3">
+            <label for="num_immatriculation" class="form-label">Numéro d'immatriculation</label>
+            <input type="text" class="form-control" id="numimmatriculation" name="
+            numimmatriculation" [(ngModel)]="internaute.numimmatriculation ">
+          </div>
+          <button type="submit" class="btn btn-primary" (click)="createUser()">S'inscrire</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

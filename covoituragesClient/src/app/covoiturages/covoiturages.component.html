@@ -1,0 +1,53 @@
+<div class="d-flex justify-content-center">
+  <form class="row g-3 w-50 bg-dark rounded mt-3 justify-content-center align-items-center"> <!--(ngSubmit)="rechercherCovoiturage()"-->
+    <div class="col-md-3 ">
+      <label for="villeDepart" class="form-label text-white">Ville de départ :</label>
+      <input type="text" class="form-control" placeholder="Ville de départ"  id="villeDepart" name="villedepart"  [(ngModel)]="villedepart">
+    </div>
+    <div class="col-md-3">
+      <label for="villeArrivee" class="form-label text-white">Ville d'arrivée :</label>
+      <input type="text" class="form-control" placeholder="Ville d'arrivée " id="villeArrivee" name="villearrivee"  [(ngModel)]="villearrivee">
+    </div>
+    <div class="col-md-3">
+      <label for="date" class="form-label text-white">Date :</label>
+      <input type="date" class="form-control" id="date"  name="date"  [(ngModel)]="datejour">
+    </div>
+    <div class="col-md-3">
+      <label for="prixMax" class="form-label text-white">Prix maximum :</label>
+      <input type="number" class="form-control" id="prixMax" name="prixmax" [(ngModel)]="prixmax">
+    </div>
+    <div class="col-md-12 d-flex justify-content-center mb-3">
+      <button type="submit" class="btn btn-primary btn-hover" (click)="rechercherCovoiturageParvilleArrivee(villedepart, villearrivee, datejour, prixmax)">Rechercher</button>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let c of covoiturages; let i = index">
+      <div class="card mt-4">
+        <div class="card-body">
+          <h5 class="card-title">Offre covoiturage {{ i + 1 }}</h5>
+          <a href="#" class="list-group-item list-group-item-action">
+            <h6 class="mb-1">Ville de départ : {{c.villedepart}}</h6>
+            <h6 class="mb-1">Ville d'arrivée : {{c.villearrive}}</h6>
+            <div class="mb-3"></div>
+            <p class="mb-1">Numéro de covoiturage : {{c.numerocovoiturage}}</p>
+            <p class="mb-1">Nombre de places : {{c.nbplaces}}</p>
+            <p class="mb-1">Prix : {{c.prixmax}}</p>
+            <div class="mb-3"></div>
+            <div class="d-flex w-100 justify-content-between">
+              <small class="text-muted">Date : {{c.datejour}}</small>
+              <button class="btn btn-primary bi"  (click)="addTransport(c.numerocovoiturage)">Ajouter Transport</button>
+
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
